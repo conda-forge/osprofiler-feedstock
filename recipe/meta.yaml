@@ -1,18 +1,18 @@
 {% set name = "osprofiler" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: eb18651bc58ae27c11cbdd201ff373254ea92750e29c62df065b2bc4c6910d48
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c5ca5d7392457cbf321f2a91663d21324b2e07e05723faff2ec3b744a7c0de6c
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - osprofiler = osprofiler.cmd.shell:main
 
@@ -43,7 +43,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "OpenStack Profiler Library"
+  summary: OpenStack Profiler Library
 
 extra:
   recipe-maintainers:
