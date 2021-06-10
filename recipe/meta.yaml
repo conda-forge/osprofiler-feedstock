@@ -1,5 +1,5 @@
 {% set name = "osprofiler" %}
-{% set version = "3.4.0" %}
+{% set version = "3.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f7fe387f4dd681bbf92b9fbe857cc90e89cfe96d44522a2727540902310a9ed6
+  sha256: 4e324c4c45bf40dc62f865a0be9315190e124b840bbdd6499e42571f2fe1df36
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - osprofiler = osprofiler.cmd.shell:main
