@@ -10,7 +10,7 @@ source:
   sha256: db1e857bc893c3149ad792fa2e217612ae7f4cc805c729ad3dbc8f71b5e33639
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - osprofiler = osprofiler.cmd.shell:main
