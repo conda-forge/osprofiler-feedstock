@@ -1,5 +1,5 @@
 {% set name = "osprofiler" %}
-{% set version = "3.4.2" %}
+{% set version = "3.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: db1e857bc893c3149ad792fa2e217612ae7f4cc805c729ad3dbc8f71b5e33639
+  sha256: 5cea450598a873e4e11d353ff9f0d16e9f3a72e9e2007e7f056b90379dcd54e1
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - osprofiler = osprofiler.cmd.shell:main
@@ -28,7 +28,6 @@ requirements:
     - oslo.utils >=3.33.0
     - prettytable >=0.7.2
     - requests >=2.14.2
-    - six >=1.10.0
     - webob >=1.7.1
     - importlib_metadata >=1.7.0  # [py<38]
 
