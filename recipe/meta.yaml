@@ -30,7 +30,6 @@ requirements:
     - prettytable >=0.7.2
     - requests >=2.14.2
     - webob >=1.7.1
-    - importlib_metadata >=1.7.0  # [py<38]
 
 test:
   imports:
