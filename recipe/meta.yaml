@@ -14,14 +14,15 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - osprofiler = osprofiler.cmd.shell:main
+  noarch: python
 
 requirements:
   host:
     - pbr >=2.0
     - pip
-    - python
+    - python >=3.8
   run:
-    - python
+    - python >=3.8
     - netaddr >=0.7.18
     - oslo.concurrency >=3.26.0
     - oslo.serialization >=2.18.0
