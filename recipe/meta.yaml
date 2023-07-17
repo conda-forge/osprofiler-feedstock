@@ -1,5 +1,5 @@
 {% set name = "osprofiler" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bbd8a336644d801105c5b5bbc004af168e1b192578037651b611a7c5abdc7bd4
+  sha256: 57837b620581b13444a2e20564775d4fc73eff67c7888af99947ed582fe514b0
 
 build:
   number: 0
