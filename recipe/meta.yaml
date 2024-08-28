@@ -1,5 +1,5 @@
 {% set name = "osprofiler" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 57837b620581b13444a2e20564775d4fc73eff67c7888af99947ed582fe514b0
+  sha256: 6dd1c4be2645a8f24121055da5bb461688dcafc7e6b4d4babc0ef1ba66902781
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - pbr >=2.0
     - pip
     - python >=3.8
+    - setuptools
   run:
     - python >=3.8
     - netaddr >=0.7.18
