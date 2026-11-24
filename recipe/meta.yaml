@@ -1,13 +1,13 @@
 {% set name = "osprofiler" %}
-{% set version = "4.4.0" %}
+{% set version = "4.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6e08df7eef6afc0d2d027813d40e43cb228f0eb3eb3441d61495c2800ebfa320
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ac28534efda606e6059f3e17b26ba10a034572cf9f0161165941e6bf44716418
 
 build:
   number: 0
